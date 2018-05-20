@@ -1,7 +1,7 @@
 import os
 
 #
-# path and dataset parameter
+# path and dataset  parameter
 #
 
 DATA_PATH = 'data'
