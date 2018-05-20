@@ -37,7 +37,7 @@ class pascal_voc(object):
             images[count, :, :, :] = self.image_read(imname, flipped)
             labels[count, :, :, :] = self.gt_labels[self.cursor]['label']
             count += 1
-            self.cursor += 1
+            self.cursor +=1
             if self.cursor >= len(self.gt_labels):
                 np.random.shuffle(self.gt_labels)
                 self.cursor = 0
